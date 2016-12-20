@@ -1,8 +1,8 @@
 # See https://www.atlassian.com/git/tutorials/migrating-overview and https://github.com/nirvdrum/svn2git
 # for more info on the included tools.
 #
-# docker build -t sawano/svn-to-git:latest .
-# docker run -it --name svn2git sawano/svn-to-git:latest
+# docker build -t sawano/svn2git:latest .
+# docker run -it --name svn2git sawano/svn2git:latest
 #
 
 FROM ubuntu:16.04

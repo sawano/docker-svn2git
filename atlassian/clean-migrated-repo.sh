@@ -12,7 +12,7 @@ HOST_DIR="$1"
 not_blank "$HOST_DIR" "HOST_DIR"
 
 docker rm svn2git-atlassian
-docker run -d --name svn2git-atlassian -it -v $HOST_DIR:/host-dir sawano/svn-to-git:latest
+docker run -d --name svn2git-atlassian -it -v $HOST_DIR:/host-dir sawano/svn2git:latest
 
 docker exec svn2git-atlassian sh -c "cd /host-dir/converted-app; java -Dfile.encoding=utf-8 -jar /migration/svn-migration-scripts.jar clean-git --force"
 

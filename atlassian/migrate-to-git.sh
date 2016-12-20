@@ -14,7 +14,7 @@ HOST_DIR="$2"
 not_blank "$HOST_DIR" "HOST_DIR"
 
 docker rm svn2git-atlassian
-docker run -d --name svn2git-atlassian -it -v $HOST_DIR:/host-dir sawano/svn-to-git:latest
+docker run -d --name svn2git-atlassian -it -v $HOST_DIR:/host-dir sawano/svn2git:latest
 
 docker exec svn2git-atlassian sh -c "git svn clone --stdlayout --authors-file=/host-dir/authors.txt $SVN_REPO_URL /host-dir/converted-repo"
 

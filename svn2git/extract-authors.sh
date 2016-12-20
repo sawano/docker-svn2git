@@ -14,7 +14,7 @@ HOST_DIR="$2"
 not_blank "$HOST_DIR" "HOST_DIR"
 
 docker rm svn2git
-docker run -d --name svn2git -it -v $HOST_DIR:/host-dir sawano/svn-to-git:latest
+docker run -d --name svn2git -it -v $HOST_DIR:/host-dir sawano/svn2git:latest
 
 docker exec svn2git sh -c "svn log --quiet $SVN_REPO_URL | grep -E 'r[0-9]+ \| .+ \|' | cut -d'|' -f2 | sed 's/ //g' | sort | uniq > /host-dir/authors.txt"
 
