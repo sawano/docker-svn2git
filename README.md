@@ -1,6 +1,6 @@
-# Utilities to migrate SVN repository to Git
+# Utilities for migrating SVN repositories to Git
 
-There are two tools to chose from. svn2git svn2git [https://github.com/nirvdrum/svn2git](https://github.com/nirvdrum/svn2git), and a tool provided by Atlassaian ([https://www.atlassian.com/git/tutorials/migrating-overview](https://www.atlassian.com/git/tutorials/migrating-overview)).
+There are two tools to chose from: [svn2git](https://github.com/nirvdrum/svn2git), and a tool provided by Atlassaian ([https://www.atlassian.com/git/tutorials/migrating-overview](https://www.atlassian.com/git/tutorials/migrating-overview)).
 
 ## svn2git
 
