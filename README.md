@@ -1,10 +1,12 @@
 # Utilities for migrating SVN repositories to Git
 
-There are two tools to chose from: [svn2git](https://github.com/nirvdrum/svn2git), and a tool provided by Atlassaian ([https://www.atlassian.com/git/tutorials/migrating-overview](https://www.atlassian.com/git/tutorials/migrating-overview)).
+There are two tools to chose from: [svn2git](https://github.com/nirvdrum/svn2git), and a tool provided by Atlassaian
+([https://www.atlassian.com/git/tutorials/migrating-overview](https://www.atlassian.com/git/tutorials/migrating-overview)).
 
 ## svn2git
 
-This is the tool svn2git [https://github.com/nirvdrum/svn2git](https://github.com/nirvdrum/svn2git) packaged as a Docker container. It's been packaged to simplify installment of the actual tools needed. The Docker image will be built automatically by the scripts.
+This is the tool svn2git [https://github.com/nirvdrum/svn2git](https://github.com/nirvdrum/svn2git) packaged as a Docker
+container. It's been packaged to simplify installment of the actual tools needed.
 
 ### Prerequisites
 * Docker installed
@@ -27,7 +29,8 @@ E.g.:
 extract-authors.sh http://mydomain.example.com/repos/my/repo $PWD
 ````
 
-This will create a file authors.txt. Edit that file and add names and emails to use in the Git repo. E.g. final file should look like:
+This will create a file authors.txt. Edit that file and add names and emails to use in the Git repo. E.g. final file
+should look like:
 
 ````
 john = John Doe <john.doe@example.com>
@@ -42,7 +45,9 @@ migrate-to-git.sh http://mydomain.example.com/repos/my/repo $PWD
 
 ## Atlassian tool
 
-This is the tool from Atlassian [https://www.atlassian.com/git/tutorials/migrating-overview](https://www.atlassian.com/git/tutorials/migrating-overview) packaged as a Docker container. It's been packaged to simplify installment of the actual tools needed. The Docker image will be built automatically by the scripts.
+This is the tool from Atlassian
+[https://www.atlassian.com/git/tutorials/migrating-overview](https://www.atlassian.com/git/tutorials/migrating-overview)
+packaged as a Docker container. It's been packaged to simplify installment of the actual tools needed.
 
 ### Prerequisites
 * Docker installed
@@ -66,7 +71,8 @@ E.g.:
 extract-authors.sh http://mydomain.example.com/repos/my/repo $PWD
 ````
 
-This will create a file authors.txt. Edit that file and add names and emails to use in the Git repo. E.g. final file should look like:
+This will create a file authors.txt. Edit that file and add names and emails to use in the Git repo. E.g. final file
+should look like:
 
 ````
 john = John Doe <john.doe@example.com>
